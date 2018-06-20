@@ -153,7 +153,7 @@ public class ScheduleTest
         List<TaskInfo> tasks = new ArrayList<TaskInfo>();
         
         actual = schedule.queryTaskStatus(tasks);
-        
+        System.out.println("tasks = "+tasks);
         Assert.assertEquals(ReturnCodeKeys.E015, actual);
         
         int expecteds[][] = { 
